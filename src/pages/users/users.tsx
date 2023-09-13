@@ -53,7 +53,7 @@ export const UsersApp = () => {
                 <StyledList>
                   {users?.users.map((el: any) =>
                     <StyledListItem key={el.id}>
-                      <img src={`${process.env.REACT_APP_BASE_URL}/${el.avatar}`}></img>
+                      <img alt='' src={`${process.env.REACT_APP_BASE_URL}/${el.avatar}`}></img>
                       <p style={{ margin: '0 30px', width: "100px" }}>{el.name}</p>
                       <p>{el.email}</p>
                     </StyledListItem>
