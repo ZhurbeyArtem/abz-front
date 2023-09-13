@@ -1,7 +1,7 @@
 import { toast } from "react-toastify";
 
 export const notify = (text:string) => {
-  if (text != 'Success') {
+  if (text !== 'Success') {
     toast.error(text, {
       position: "top-right",
       autoClose: 2000,
